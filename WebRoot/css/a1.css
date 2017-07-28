@@ -1,0 +1,106 @@
+.kcontentAlgorithmShowa1 {
+    width: 950px;
+    border: 1px solid #dfdedc;
+    margin: 0 auto;
+    margin-top:5px;
+    background: #fff;
+    min-height: 400px;
+
+    padding: 12px 20px 20px 20px;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.kcontentControla1 {
+    width: 950px;
+    border: 1px solid #dfdedc;
+    margin: 0 auto;
+    margin-top:10px;
+    background: #fff;
+    min-height: 400px;
+
+    padding: 12px 20px 20px 20px;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.pm{
+	width:50px;
+	height:50px;
+}
+.pmtag{
+	
+}
+.graph{
+	border: 1px solid #dfdedc;
+	margin-left: 1px;
+	margin-top: 5px;
+	width:350px;
+	height:400px;
+	padding: 1px 1px 1px 1px;
+}
+.graphTable{
+	border: 1px solid #dfdedc;
+	margin-left: 1px;
+	margin-top: 5px;
+	width:450px;
+	height:930px;
+	padding: 1px 1px 1px 1px;
+}
+.controlTip{
+	border: 1px solid #dfdedc;
+	margin-left: 1px;
+	margin-top: 5px;
+	width:575px;
+	height:400px;
+	padding: 1px 1px 1px 1px;
+}
+
+.algraph{
+	border: 1px solid #dfdedc;
+	margin-left: 1px;
+	margin-top: 5px;
+	width:350px;
+	height:400px;
+	padding: 1px 1px 1px 1px;
+}
+
+.algraphTable{
+	border: 1px solid #dfdedc;
+	margin-left: 1px;
+	margin-top: 5px;
+	width:475px;
+	height:930px;
+	padding: 1px 1px 1px 1px;
+}
+
+.alg_btna1{
+	display:inline-block; 
+	background:#39A4DC; 
+	min-width:120px; 
+	height:30px; 
+	text-align:center; 
+	font-size:14px; 
+	line-height:30px; 
+	overflow:hidden; 
+	border-radius:3px; 
+    margin-left:250px;
+    margin-top:200px;
+    color:white;
+}
+.alg_btna1:hover{ 
+	background:#1F7CAF;
+	cursor: pointer;
+	color:#ff0;
+}
+.alg_btna1:active{ 
+	background:#5bb3e1;
+	cursor: pointer;
+	color:#ff0;
+}
+.bodya1{ 
+	width:100%; 
+	color:#555;
+	font:12px/20px SimSun,Tahoma,Helvetica,Arial,sans-serif; 
+	-webkit-text-size-adjust: none;
+}

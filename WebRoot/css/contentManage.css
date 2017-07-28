@@ -1,0 +1,355 @@
+.button{
+	display:inline-block; 
+	background:#39A4DC; 
+	min-width:92px; 
+	height:30px; 
+	text-align:center; 
+	vertical-align:middle;
+	font-size:14px; 
+	line-height:30px; 
+	overflow:hidden; 
+	border-radius:3px; 
+    margin-left:5px;
+    color:white;
+    border:0px;  
+}
+.button:hover{ 
+	background:#1F7CAF;
+	cursor: pointer;
+	color:#ff0;
+}
+.button:active{ 
+	background:#5bb3e1;
+	cursor: pointer;
+	color:#ff0;
+}
+
+.deletebutton{
+	display:inline-block; 
+	background:#39A4DC; 
+	min-width:45px; 
+	height:25px; 
+	text-align:center; 
+	vertical-align:middle;
+	font-size:12px; 
+	line-height:25px; 
+	overflow:hidden; 
+	border-radius:3px; 
+    margin-top:5px;
+    margin-bottom:5px;
+    margin-left:8px;
+    color:white;
+    border:0px;  
+}
+.deletebutton:hover{ 
+	background:#1F7CAF;
+	cursor: pointer;
+	color:#ff0;
+}
+.deletebutton:active{ 
+	background:#5bb3e1;
+	cursor: pointer;
+	color:#ff0;
+}
+
+.alterbutton{
+	display:inline-block; 
+	background:#39A4DC; 
+	min-width:45px; 
+	height:25px; 
+	text-align:center; 
+	vertical-align:middle;
+	font-size:12px; 
+	line-height:25px; 
+	overflow:hidden; 
+	border-radius:3px; 
+    margin-top:5px;
+    margin-bottom:5px;
+   
+    color:white;
+    border:0px;  
+}
+.alterbutton:hover{ 
+	background:#1F7CAF;
+	cursor: pointer;
+	color:#ff0;
+}
+.alterbutton:active{ 
+	background:#5bb3e1;
+	cursor: pointer;
+	color:#ff0;
+}
+
+.tk_AddTeacher_kboxwrap {
+	background: #000;
+	z-index: 10000;
+	opacity: 0.3;
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+.tk_login_kbox1 {
+	width: 510px;
+	padding: 23px 0;
+	z-index:  10099;
+	position: absolute;
+	top: 200px;
+	margin: 0 auto;
+	left: 50%;
+	margin-left: -255px;
+}
+.tk_login_kboxcon1 {
+	width: 485px;
+	padding: 0px 12px 32px 13px;
+	background: url(../images/tk_login_kboxbd.png) center repeat-y;
+	color: #c8c8c8;
+	font-size: 16px;
+}
+.tk_login_kboxcon1 .closed {
+	background: url(../images/closed.png) no-repeat center;
+	width: 34px;
+	height: 34px;
+	display: inline-block;
+	float: right;
+	cursor: pointer;
+}
+.tk_login_kboxcon1 .closed:hover {
+	background: #FF2D05 url(../images/closed2.png) no-repeat center;
+	display: inline-block;
+	float: right;
+}
+.tk_login_kboxcon1 .closed:active {
+	background: #e84646 url(../images/closed2.png) no-repeat center;
+	width: 34px;
+	height: 34px;
+	display: inline-block;
+	float: right;
+	cursor: pointer;
+}
+.tk_addTeacher_kbox1_hd {
+	background: url(../images/tk_login_kboxhd.png) no-repeat top center;
+	height: 12px;
+	width: 510px;
+}
+.clear {
+    clear: both;
+}
+
+.control{
+	margin-top:5px;	
+	border: 1px  solid #dfdedc;
+	border-radius:3px;
+	height:60px;
+	width:940px;
+	padding: 10px 0 9px 10px;
+}
+
+.file{
+	position:absolute; 
+	top:2px; 
+	left:408px; 
+	height:31px;
+	width:60px;
+	filter:alpha(opacity:0);opacity:0;width:60px;cursor: pointer;
+} 
+.file:hover{ 
+	cursor: pointer;
+}
+
+.searchText{
+	 width:200px;	
+	 vertical-align:middle;
+	 border-radius:3px; 
+	 border:1px solid #6F6F6F;
+	
+	 color:#2e2e2e; 
+	 font-size:14px; 
+	 font-family:"Î¢ÈíÑÅºÚ";
+	 padding-left:3px; 
+	 height:27px;
+	 line-height:27px\9;
+}
+
+.searchText:hover{
+	border:1px solid #1F7CAF;
+}
+
+.searchText:active{
+	border:1px solid #5bb3e1;
+}
+.searchText:focus{
+	border:1px solid #5bb3e1;
+}
+
+.teaList{
+	margin-top:0px;	
+	border: 1px  solid #dfdedc;
+	border-radius:3px;
+	min-height:450px;
+	width:950px;
+
+}
+
+.tk_Teacher_kboxbtn {
+	height: 33px;
+	background: #1bb674;
+	text-align: center;
+	font-size: 14px;
+	line-height: 33px;
+	border-radius: 3px;
+	cursor: pointer;
+	width: 290px;
+	color: #fff;
+	margin: 0 auto;
+	border: none;
+	display: block;
+}
+.tk_Teacher_kboxbtn:hover {
+	height:33px;
+	background: #20c981;
+	text-align: center;
+	font-size: 14px;
+	line-height: 33px;
+	border-radius: 3px;
+	width: 290px;
+	color: #fff;
+	margin: 0 auto;
+	border: none;
+	display: block;
+}
+
+.loading {
+    width:50px;
+    height:50px;
+}
+
+.tk_login_kboxcon1 .point2 {
+	color: #ff2f2f;
+	padding-top: 2px;
+	width: 290px;
+	margin: 5px auto;
+	height: 17px;
+}
+.kcontentControlNew{
+    width: 950px;
+    border: 1px solid #dfdedc;
+    margin: 0 auto;
+    margin-top:5px;
+    background: #fff;
+    min-height: 400px;
+    padding: 12px 20px 20px 20px;
+    overflow: auto;
+}
+.tk_content_Contentwarp {
+	background:#F5EEDA;
+	border: 1px solid #dfdedc;
+	margin-top: -5px;
+	height: 100%;
+	width: 100%;
+}
+.tk_login_kfoot{ 
+	height:40px; 
+	line-height:40px; 
+	background:#fff; 
+	text-align:center; 
+	font-size:12px; 
+	color:#505050; 
+	width:100%; 
+	border-top:1px 
+	solid #dcdcdc;
+}
+.find_pwd_title{ height:40px;  width:100%;background:#1bb674;	margin:0 auto;}
+.find_pwd_title h3{ width:70%; margin:0px auto;
+    display:block;
+    height:40px;
+    line-height:40px;
+    color:#fff;
+    font-size:14px;
+    font-weight:bold;
+}
+.find_pwd{ 
+	margin:0 auto;
+	background:#fff;
+    padding: 0;
+}
+
+.faw{
+	font-family:"Î¢ÈíÑÅºÚ, Microsoft YaHei";
+}
+.ft10{font-size:10px;}
+.ft12{font-size:12px;}
+.ft14{font-size:14px;}
+.ft15{font-size:15px;}
+.ft16{font-size:16px ;}
+.ft18{font-size:18px ;}
+
+
+body {
+    width: 100%;
+    background: #f5eeda;
+    margin: 0;
+    padding: 0;
+}
+.body{
+	width: 100%;
+    background: #f5eeda;
+    margin: 0;
+    padding: 0;
+}
+html {
+    -webkit-text-size-adjust: none;
+    overflow-y:scroll; overflow-x:visible;
+}
+
+input::-ms-input-placeholder {
+ color:#C8C8C8;
+}
+input::-webkit-input-placeholder {
+ color:#C8C8C8;
+}
+input::-moz-placeholder {
+ color:    #C8C8C8;
+}
+.tk_login_kboxcon1 .hd:hover, .tk_login_kboxcon1 .bd:hover {
+	border: 1px solid #1bb674;
+}
+.tk_login_kboxcon1 .bd {
+	border: 1px solid #bebebe;
+	border-radius: 3px;
+	width: 290px;
+	height: 38px;
+	line-height: 38px;
+	margin: 0 auto 0;
+}
+
+.tk_login_kboxcon1 .hd input, .tk_login_kboxcon1 .bd input {
+	overflow: hidden;
+	width: 247px;
+	float: left;
+	line-height: 20px;
+	height: 20px;
+	border: none;
+	font-size: 14px;
+	padding: 8px 0 9px 10px;
+	color: #2e2e2e;
+}
+.tk_login_kboxcon1 .point2 {
+	color: #ff2f2f;
+	padding-top: 2px;
+	width: 290px;
+	margin: 5px auto;
+	height: 17px;
+}
+.mt20 {
+	margin-top: 20px;
+}
+.tc {
+	text-align: center;
+}
+.col3 {
+	color: #333 !important;
+}

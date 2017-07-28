@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
+
+	<bean id="dataSource"
+		class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="url"
+			value="jdbc:mysql://localhost:3306/web_db">
+		</property>
+		<property name="username" value="root"></property>
+		<property name="password" value="111111"></property>
+	</bean>
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">
+					org.hibernate.dialect.MySQLDialect
+				</prop>
+			</props>
+		</property>
+		<property name="mappingResources">
+			<list>
+				<value>cn/edu/aicourse/entity/KlgUnit.hbm.xml</value>
+				<value>cn/edu/aicourse/entity/Algorithm.hbm.xml</value>
+				<value>cn/edu/aicourse/entity/KlgPointContain.hbm.xml</value>
+				<value>cn/edu/aicourse/entity/KlgModule.hbm.xml</value>
+				<value>cn/edu/aicourse/entity/Teacherfile.hbm.xml</value>
+				<value>cn/edu/aicourse/entity/UserTeachCourse.hbm.xml</value>
+				<value>cn/edu/aicourse/entity/User.hbm.xml</value>
+				<value>cn/edu/aicourse/entity/KlgPoint.hbm.xml</value>
+				<value>cn/edu/aicourse/entity/UserAllTypes.hbm.xml</value>
+				<value>cn/edu/aicourse/entity/UserAccessWeb.hbm.xml</value>
+				<value>cn/edu/aicourse/entity/Course.hbm.xml</value>
+				<value>cn/edu/aicourse/entity/ViewStudent.hbm.xml</value>
+				<value>cn/edu/aicourse/entity/ViewTeacher.hbm.xml</value>
+				<value>cn/edu/aicourse/entity/UserMessage.hbm.xml</value>
+			</list>
+		</property></bean>
+
+	
+	</beans>

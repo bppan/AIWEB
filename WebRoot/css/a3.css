@@ -1,0 +1,75 @@
+		*{margin: 0px; padding: 0px;}
+		#start{display: inline-block; left: 250px; top: 70px; position: absolute;}
+		#end{display: inline-block; right: 250px; top: 70px; position: absolute;}
+		#head1{top: 110px; left: 20.8%; position: absolute; width: 170px; height: 170px;}
+		#head2{top: 110px; right: 19%; position: absolute; width: 170px; height: 170px;}
+		.head3{position: absolute; width: 94px; height: 94px;}
+		#head1 span,#head2 span,.controlSpeed{line-height: 50px; width: 50px; height: 50px; background-color:#7bb3e1;  border: solid 1px #ddf; margin: 0 -5px -5px 0; display: inline-block; position: absolute; line-height: 50px; text-align: center; font-size: 16px; font-family:"Microsoft YaHei",SimSun,SimHei; color: white; cursor: pointer;}
+		.controlSpeed{line-height: 50px; width: 100px; height: 50px; background-color:#7bb3e1;  border: solid 2px #ddf; display: inline-block; position: absolute; line-height: 50px; text-align: center; font-size: 20px; font-family:"Microsoft YaHei",SimSun,SimHei; color: white; cursor: pointer;}
+		.controlSpeed:hover{z-index: 9; border: 2px solid #1F7CAF; background-color: #39A4DC; color: #ff0}
+		.spanSet{line-height: 30px; width: 30px; height: 30px; background-color:#7bb3e1;  border: solid 1px #ddf; margin: 0 -1px -1px 0; display: inline-block; position: absolute; line-height: 30px; text-align: center; font-size: 16px; font-family:"Microsoft YaHei",SimSun,SimHei; color: white; cursor: pointer;}
+		#target{border-color: black; color: black;}
+		#head1 span:hover,#head2 span:hover,.head3 span:hover,.controlSpeed:hover{z-index: 9; border: 1px solid #1F7CAF; background-color: #39A4DC; color: #ff0}
+		#arrow{width: 22%; height: 32%; position: absolute; left: 35%; top: 11%;}
+		
+
+		
+#button{
+	display:inline-block; 
+	background:#39A4DC; 
+	min-width:120px; 
+	height:30px; 
+	display:inline-block; 
+	text-align:center; 
+	font-size:14px; 
+	line-height:30px; 
+	overflow:hidden; 
+	border-radius:3px; 
+    margin-left:8px;
+    color:white;
+    position: absolute;
+	left: 44%;
+	top: 70%;
+}
+#button:hover{ 
+	background:#1F7CAF;
+	cursor: pointer;
+	color:#ff0;
+}
+#button:active{ 
+	background:#5bb3e1;
+	cursor: pointer;
+	color:#ff0;
+}
+
+		#algorithmDisplay{
+			width: 950px;
+			position: absolute;
+			/*overflow: auto;*/
+			height: 800px;
+		}
+		#algorithmDisplayWrap{
+			position: relative;
+			cursor: move;
+		}
+		#canvasLine{
+			position: absolute;
+		}
+		.kcontentControl{
+			position: relative;
+		    width: 950px;
+		    border: 1px solid #dfdedc;
+		    margin: 0 auto;
+		    margin-top:5px;
+		    background: #fff;
+		    min-height: 400px;
+		    padding: 12px 20px 20px 20px;
+		    overflow: hidden;
+		    font-size: 14px;
+		} 
+		.tipSpan{
+			position: absolute;
+			text-align: center;
+			width: 20px;
+			font-weight: bold;
+		}

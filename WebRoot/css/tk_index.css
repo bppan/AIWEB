@@ -1,0 +1,703 @@
+@charset "utf-8";
+/*login.css*/
+
+
+/* 首页登录头尾*/
+.tk_login_kheadwarp {
+	background: #fff;
+	height: 60px;
+	width: 100%;
+}
+.tk_login_khead {
+	width: 70%;
+	margin: 0 auto;
+	height: 60px;
+}
+.tk_login_khead .right {
+	height: 60px;
+	width: 43px;
+	display: inline-block;
+	background: url(../images/klogin_login.png) no-repeat left center;
+	color: #404040;
+	line-height: 60px;
+	padding-left: 50px;
+	cursor: pointer;
+}
+.tk_login_kfoot{ 
+	height:40px; 
+	line-height:40px; 
+	background:#fff; 
+	text-align:center; 
+	font-size:12px; 
+	color:#505050; 
+	width:100%; 
+	border-top:1px 
+	
+	z-index: 50;
+	solid #dcdcdc;
+}
+
+/*20150625*/
+.tk_login_kfoot a{ display:block; margin-top:3px; color:#75a2ff;}
+.tk_login_kfoot a:hover{ color:#4f89ff;}
+/**/
+.tk_login_kbanner {
+	width: 100%;
+	position: relative;
+	height: 710px;
+	background: #000;
+}
+.tk_login_kbanner .bd {
+	margin: 0 auto;
+	position: relative;
+	z-index: 0;
+	overflow: hidden;
+}
+.tk_login_kbanner .bd ul {
+	width: 100% !important;
+}
+.tk_login_kbanner .bd li {
+	width: 100% !important;
+	height: 710px;
+	overflow: hidden;
+	text-align: center;
+}
+.tk_login_kbanner .bd li a {
+	display: block;
+	height: 710px;
+}
+.tk_login_kbanner .hd {
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	left: 0;
+	height: 30px;
+	line-height: 30px;
+}
+.tk_login_kbanner .hd ul {
+	text-align: center;
+}
+.tk_login_kbanner .hd ul li {
+	cursor: pointer;
+	display: inline-block;
+*display:inline;
+	zoom: 1;
+	width: 100px;
+	height: 4px;
+	margin: 0px 10px;
+	overflow: hidden;
+filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+	opacity: 0.5;
+	background: #fff;
+	line-height: 999px;
+}
+.tk_login_kbanner .hd ul .on {
+	background: #303030;
+}
+.tk_login_kboxwrap {
+	background: #000;
+	z-index: 9;
+	opacity: 0.5;
+filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+.tk_login_kbox1 {
+	width: 510px;
+	padding: 23px 0;
+	z-index: 99;
+	position: absolute;
+	top: 200px;
+	margin: 0 auto;
+	left: 50%;
+	margin-left: -255px;
+}
+.tk_login_kboxcon1 {
+	width: 485px;
+	padding: 0px 12px 32px 13px;
+	background: url(../images/tk_login_kboxbd.png) center repeat-y;
+	color: #c8c8c8;
+	font-size: 16px;
+}
+.tk_login_kboxcon1 .closed {
+	background: url(../images/closed.png) no-repeat center;
+	width: 34px;
+	height: 34px;
+	display: inline-block;
+	float: right;
+	cursor: pointer;
+}
+.tk_login_kboxcon1 .closed:hover {
+	background: #FF2D05 url(../images/closed2.png) no-repeat center;
+	display: inline-block;
+	float: right;
+}
+.tk_login_kboxcon1 .closed:active {
+	background: #e84646 url(../images/closed2.png) no-repeat center;
+	width: 34px;
+	height: 34px;
+	display: inline-block;
+	float: right;
+	cursor: pointer;
+}
+.tk_login_kboxcon1 .hd {
+	border: 1px solid #bebebe;
+	border-radius: 3px;
+	width: 290px;
+	height: 38px;
+	line-height: 38px;
+	margin: 20px auto 18px;
+}
+.tk_login_kboxcon1 .hd i {
+	width: 33px;
+	height: 38px;
+	display: inline-block;
+	float: left;
+	background: url(../images/klogin_ico.png) no-repeat top;
+	overflow: hidden;
+	text-decoration: none;
+}
+.tk_login_kboxcon1 .hd input, .tk_login_kboxcon1 .bd input {
+	overflow: hidden;
+	width: 247px;
+	float: left;
+	line-height: 20px;
+	height: 20px;
+	border: none;
+	font-size: 14px;
+	padding: 8px 0 9px 10px;
+	color: #2e2e2e;
+}
+input::-ms-input-placeholder {
+ color:#C8C8C8;
+}
+input::-webkit-input-placeholder {
+ color:#C8C8C8;
+}
+input::-moz-placeholder {
+ color:    #C8C8C8;
+}
+.tk_login_kboxcon1 .hd:hover, .tk_login_kboxcon1 .bd:hover {
+	border: 1px solid #1bb674;
+}
+.tk_login_kboxcon1 .bd {
+	border: 1px solid #bebebe;
+	border-radius: 3px;
+	width: 290px;
+	height: 38px;
+	line-height: 38px;
+	margin: 0 auto 0;
+}
+.tk_login_kboxcon1 .bd i, .tk_login_kboxcon1 .bdon i {
+	width: 33px;
+	height: 38px;
+	display: inline-block;
+	float: left;
+	background: url(../images/klogin_ico.png) no-repeat bottom;
+	overflow: hidden;
+	text-decoration: none;
+}
+.tk_login_kboxcon1 .bdon {
+	border: 1px solid #1bb674;
+	border-radius: 3px;
+	width: 290px;
+	height: 38px;
+	line-height: 38px;
+	margin: 0 auto 0;
+}
+.tk_login_kboxcon1 .bdon input {
+	overflow: hidden;
+	width: 247px;
+	float: left;
+	line-height: 20px;
+	height: 20px;
+	border: none;
+	font-size: 14px;
+	padding: 8px 0 9px 10px;
+	color: #2e2e2e;
+}
+.tk_login_kboxcon1 .ft {
+	width: 290px;
+	margin: -10px auto 20px;
+	height: 20px;
+}
+.tk_login_kboxcon1 .ft .col1 {
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+	background: url(../images/klogin_check.png) no-repeat bottom center;
+	overflow: hidden;
+	text-decoration: none;
+	margin-top: 3px;
+	margin-right: 4px;
+}
+.tk_login_kboxcon1 .ft .col2 {
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+	background: url(../images/klogin_check.png) no-repeat top center;
+	overflow: hidden;
+	text-decoration: none;
+	margin-top: 3px;
+	margin-right: 4px;
+}
+.tk_login_kboxcon1 .ft .col2:hover {
+	background: url(../images/klogin_check.png) no-repeat left -12px;
+	overflow: hidden;
+}
+.tk_login_kboxbtn {
+	height: 40px;
+	background: #1bb674;
+	text-align: center;
+	font-size: 16px;
+	line-height: 40px;
+	border-radius: 3px;
+	cursor: er;
+	width: 290px;
+	color: #fff;
+	margin: 0 auto;
+	border: none;
+	display: block;
+}
+.tk_login_kboxbtn:hover {
+	height: 40px;
+	background: #20c981;
+	text-align: center;
+	font-size: 16px;
+	line-height: 40px;
+	border-radius: 3px;
+	width: 290px;
+	color: #fff;
+	margin: 0 auto;
+	border: none;
+	display: block;
+}
+.tk_login_kboxbtnon {
+	height: 40px;
+	background: #19a569;
+	text-align: center;
+	font-size: 16px;
+	line-height: 40px;
+	border-radius: 3px;
+	cursor: pointer;
+	width: 290px;
+	color: #fff;
+	margin: 0 auto;
+	border: none;
+	display: block;
+}
+.tk_login_kboxcon1 .point {
+	color: #ff2f2f;
+	font-size: 12px;
+	padding-top: 2px;
+	width: 290px;
+	margin: 5px auto;
+	height: 17px;
+}
+.tk_login_kbox1_hd {
+	background: url(../images/tk_login_kboxhd.png) no-repeat top center;
+	height: 12px;
+	width: 510px;
+}
+.tk_login_kbox1_ft {
+	background: url(../images/tk_login_kboxft.png) no-repeat top center;
+	height: 14px;
+	width: 510px;
+}
+.tk_login_kboxcon1 .forget {
+	color: #0092dd;
+}
+.tk_login_kboxcon1 .forgeton {
+	color: #228dc5;
+}
+.tk_login_kboxcon1 .forget:hover {
+	color: #20b3ff;
+}
+.tk_login_notice {
+	height: 50px;
+	line-height: 50px;
+	width: 450px;
+	margin: 0 auto;
+	border-top: 1px dashed #e2e2e2;
+	text-align: center;
+}
+/*---------------------弹框 20141024-------------------*/
+#wrap {
+	text-align: left;
+}
+em, i, cite, s {
+	font-style: normal;
+}
+strong, b {
+	font-weight: bold;
+}
+.faa {
+	font-family: Arial, Helvetica, sans-serif;
+}
+.faw {
+	font-family: "微软雅黑";
+}
+input, textarea, select {
+	vertical-align: middle;
+}
+table {
+	border-collapse: collapse;
+}
+.fixed {
+	display: block;
+	min-height: 1%;
+}
+.fixed:after {
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+*html .fixed {
+	height: auto;
+}
+.mauto {
+	margin: 0 auto;
+}
+.tr {
+	text-align: right;
+}
+.tc {
+	text-align: center;
+}
+.tl {
+	text-align: left;
+}
+.lh23 {
+	line-height: 23px;
+}
+.bred {
+	border: 1px solid red
+}
+.ft10 {
+	font-size: 10px;
+}
+.ft12 {
+	font-size: 12px;
+}
+.ft14 {
+	font-size: 14px;
+}
+.ft16 {
+	font-size: 16px;
+}
+.ft18 {
+	font-size: 18px;
+}
+.main {
+	width: 1004px;
+	overflow: hidden;
+	_zoom: 1;
+	margin: 0 auto;
+}
+.main-box {
+	width: 100%;
+}
+.mt5 {
+	margin-top: 5px;
+}
+.mt10 {
+	margin-top: 10px;
+}
+.mt15 {
+	margin-top: 15px;
+}
+.mt20 {
+	margin-top: 20px;
+}
+.mt25 {
+	margin-top: 25px;
+}
+.mt30 {
+	margin-top: 30px;
+}
+.ml5 {
+	margin-left: 5px;
+}
+.ml10 {
+	margin-left: 10px;
+}
+.ml15 {
+	margin-left: 15px;
+}
+.ml20 {
+	margin-left: 20px;
+}
+.ml25 {
+	margin-left: 25px;
+}
+.mb5 {
+	margin-bottom: 5px;
+}
+.pt10 {
+	padding-top: 10px;
+}
+.pt5 {
+	padding-top: 5px;
+}
+.pt15 {
+	padding-top: 15px;
+}
+.pl20 {
+	padding-left: 20px;
+}
+.pl5 {
+	padding-left: 5px;
+}
+.mr5 {
+	margin-right: 5px;
+}
+.col1 {
+	color: #23c781 !important;
+}
+.col2 {
+	color: #ff0000 !important;
+}
+.col3 {
+	color: #333 !important;
+}
+.col6 {
+	color: #666 !important;
+}
+.col7 {
+	color: #FFFFFF !important;
+}
+.col9 {
+	color: #999;
+}
+.col4 {
+	color: #f33939 !important;
+}
+.none {
+	display: none;
+}
+.fb {
+	font-weight: bold;
+}
+.mt_10 {
+	margin-top: -5px;
+}
+.tk_login_kbox {
+	margin: 0 auto;
+	background: url(../images/tk_login_kbox.png) repeat-y;
+	width: 532px;
+	height: 300px;
+	padding: 40px;
+}
+.tk_login_kbox2 {
+	height: 370px;
+}
+.tk_login_kboxcon {
+	width: 532px;
+	height: 290px;
+	padding-top: 10px;
+	background: #fff;
+	color: #333;
+	font-size: 14px;
+}
+.tk_login_kboxcon2 {
+	height: 360px;
+	padding-top: 10px;
+}
+.tk_login_kboxcon .closed {
+	background: url(../images/closed.png) no-repeat top;
+	width: 17px;
+	height: 17px;
+	display: inline-block;
+	float: right;
+	margin: 0 10px 5px 0;
+	cursor: pointer;
+}
+.tk_login_kboxcon .closed:hover {
+	background: url(../images/closed.png) no-repeat bottom;
+	width: 17px;
+	height: 17px;
+	display: inline-block;
+	float: right;
+}
+.tk_login_kboxcon .part1 {
+	width: 410px;
+	margin: 10px auto 0;
+}
+.tk_login_kboxcon h1 {
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 23px;
+}
+.pop_content_bj {
+	width: 410px;
+	overflow: hidden;
+}
+.pop_teacher_btn .p_btn_sure {
+	background: url(../images/p_btn_sure.png) top left;
+	width: 140px;
+	height: 38px;
+	line-height: 38px;
+	font-family: "微软雅黑";
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+	display: inline-block;
+}
+.pop_teacher_btn .p_btn_sure:hover {
+	background: url(../images/p_btn_sure.png) bottom left;
+}
+.yellow_button2 span {
+	background: url(../images/button_yellow2.png) no-repeat bottom;
+	display: inline-block;
+	height: 32px;
+	line-height: 32px;
+	font-family: "微软雅黑";
+	color: #fff;
+	width: 136px;
+	display: inline-block;
+	text-align: center;
+}
+.yellow_button2:hover span {
+	background-position: top;
+}
+.pop_content_bj .text3 {
+	width: 138px;
+	line-height: 33px;
+	border: 1px solid #d4d4d4;
+	border-radius: 5px;
+	color: #666;
+	font-size: 14px;
+	padding-left: 10px;
+	height: 33px;
+}
+.pop_content_bj table td {
+	padding: 9px 0;
+}
+.pop_teacher_btn .pa_btn_sure {
+	background: url(../images/pa_btn_sure.png) top left;
+	width: 130px;
+	height: 35px;
+	line-height: 35px;
+	font-family: "微软雅黑";
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+	display: inline-block;
+	margin-right: 40px;
+}
+.pop_teacher_btn .pa_btn_sure:hover {
+	background: url(../images/pa_btn_sure.png) bottom left;
+}
+.pop_content_bj .text4 {
+	width: 342px;
+	line-height: 33px;
+	border: 1px solid #d4d4d4;
+	border-radius: 5px;
+	color: #666;
+	font-size: 14px;
+	padding-left: 10px;
+	height: 33px;
+}
+.pop_content_bj table {
+	width: 410px;
+	overflow: hidden;
+}
+.pop_teacher_btn .skip {
+	border: 1px solid #d4d4d4;
+	width: 96px;
+	height: 38px;
+	line-height: 38px;
+	font-family: "微软雅黑";
+	font-size: 16px;
+	color: #666;
+	border-radius: 6px;
+	text-align: center;
+	display: inline-block;
+	margin-right: 5px;
+}
+.pop_content_bj .text5 {
+	width: 325px;
+	line-height: 33px;
+	border: 1px solid #d4d4d4;
+	border-radius: 5px;
+	color: #666;
+	font-size: 14px;
+	padding-left: 10px;
+	height: 33px;
+}
+.pop_middle_tag {
+	background: url(../images/tag.jpg) no-repeat top;
+	height: 41px;
+	width: 419px;
+	overflow: hidden;
+	margin: 25px 0 24px 0px;
+}
+.pop_middle-tag {
+	background: url(../images/tag.jpg) no-repeat bottom;
+	height: 41px;
+	width: 419px;
+	overflow: hidden;
+	margin: 25px 0 24px 0px;
+}
+/*20150108*/
+.head_move {
+	display: inline-block;
+	width: 152px;
+	height: 49px;
+	margin: 6px 50px 0 0;
+	position: relative;
+}
+/*20160619 add hjkan*/
+.code_a {
+	width: 175px;
+	height: 256px;
+	position: absolute;
+	top: 301px;
+	right: 50%;
+	margin: 0  -440px 0 0;
+	z-index:999;
+	background: url(../images/t_bg.png) no-repeat;
+	text-align:center;
+}
+.code_b {
+	width: 175px;
+	height: 256px;
+	position: absolute;
+	top: 301px;
+	right: 50%;
+	margin: 0  -440px 0 0;
+	z-index:999;
+	background: url(../images/p_bg.png) no-repeat;
+	text-align:center;
+}
+.code_c {
+	width: 175px;
+	height: 256px;
+	position: absolute;
+	top: 301px;
+	right: 50%;
+	margin: 0  -440px 0 0;
+	z-index:999;
+	background: url(../images/s_bg.png) no-repeat;
+	text-align:center;
+}
+
+.code_b h1,.code_a h1,.code_c h1 {
+	line-height: 38px;
+	height: 38px;
+	font-size: 16px;
+	font-weight: normal;
+}
+.t_btn {
+	width: 142px;
+	height: 38px !important;
+	margin: 9px auto;
+	display: block;
+	border-radius: 5px;
+}

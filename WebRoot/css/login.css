@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+.headLogo-zhixue {
+    width: 297px;
+    height: 60px;
+    background:  no-repeat url(../images/klogin_logo.jpg);
+}
+
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+
+.klogin1 {
+	background: #edd989 center 0 no-repeat url(../images/klogin1.png);
+}
+
+.klogin2 {
+	background: #3a8bcb center 0 no-repeat url(../images/klogin2.png);
+}
+
+.klogin3 {
+	background: #60b455 center 0 no-repeat url(../images/klogin3.png);
+}
+

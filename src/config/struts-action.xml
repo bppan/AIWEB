@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+	<!-- 与spring集成的写法，action等交予spring管理 -->
+	<package name="login_ajax" namespace="/" extends="json-default">
+		<action name="login" class="loginAction">		
+			<result type="json"></result>
+		</action>
+		<action name="validateName" class="loginValidateNameAction">	
+			<result type="json"></result>		
+		</action>
+		<action name="getLoginFailTime" class="getLoginFailTimeAction">
+			<result type="json"></result>
+		</action>
+		<action name="loginState" class="loginStateAction">
+			<result type ="json"></result>
+		</action>
+		<action name="validateConflictLoginName" class="registerAction">
+			<result type ="json"></result>
+		</action>
+		<action name="registerUser" class="registUserAction">
+			<result type ="json"></result>
+		</action>
+		<action name="getKlgModule" class="getKlgModuleAction">
+			<result type ="json"></result>
+		</action>
+		<action name="validateUserName" class="validateUserNameAction">
+			<result type ="json"></result>
+		</action>
+		
+		<action name="alterUser" class="alterUserAction">
+			<result type ="json"></result>
+		</action>
+		<action name="webContent" class="getWebContentAction">
+			<result type ="json"></result>
+		</action>
+		<action name="uploadfile" class="uploadfileAction">
+			<result name="success">/uploadFile.jsp</result>
+		</action>
+		<action name="getfileList" class="getfileListAction">
+			<result type = "json"></result>
+		</action>
+		
+		<action name="deleteFile" class="deleteFileAction">
+			<result type = "json"></result>
+		</action>
+		
+		<action name="getteaList" class="getteaListAction">
+			<result type = "json"></result>
+		</action>
+		
+		<action name="deleteTeacher" class="deleteTeacherAction">
+			<result type = "json"></result>
+		</action>
+		
+		<action name="addTeacher" class="addTeacherAction">
+			<result type = "json"></result>
+		</action>
+		
+		<action name="alterTeacher" class="alterTeacherAction">
+			<result type = "json"></result>
+		</action>
+		
+		<action name="getStudentMessageList" class="getStudentMessageListAction">
+			<result type = "json"></result>
+		</action>
+		
+		<action name="getTeaMessageList" class="getTeaMessageListAction">
+			<result type = "json"></result>
+		</action>
+		
+		<action name="getTeacherMessage" class="getTeacherMessageAction">
+			<result type = "json"></result>
+		</action>
+		
+		<action name="alterTeacherMessage" class="alterTeacherMessageAction">
+			<result type = "json"></result>
+		</action>
+		<action name="getModuleUnitPointList" class="getModuleUnitPointListAction">
+			<result type = "json"></result>
+		</action>
+		<action name="alterWebContent" class="alterWebContentAction">
+			<result type = "json"></result>
+		</action>
+	
+		<action name="addPMUA" class="addPMUAAction">
+			<result type = "json"></result>
+		</action>
+		
+		<action name="id3file" class="Id3LoadExcelServletAction">
+			<result name="success">/a15.jsp</result>
+		</action>
+		
+		<action name="validateAlterLoginName" class="validateAlterLoginNameAction">
+			<result type = "json"></result>
+		</action>
+
+	</package>
+	
+	<package name="register_Action" namespace="/" extends="abstract_struts">
+
+		<action name="register" class="registerAction">
+			<result name="success" type="redirect">/register.jsp</result>
+			<interceptor-ref name="myInterceptor" />
+		</action>
+		<action name="getImageCode" class="LoginImageCode"></action>
+		
+	</package>
+	
+	<package name="struts2" extends="struts-default">        
+       <action name="downFile" class="downFileAction">  
+           <result name="success" type="stream">  
+              <param name="contentType">application/octet-stream;charset=ISO8859-1</param>  
+               <param name="contentDisposition">attachment;fileName="${fileName}"</param>  
+               <param name="inputName">downloadFile</param>  
+               <param name="bufferSize">1024</param>  
+           </result>  
+           <result name="fail" type="redirect">/download.jsp</result>
+       </action>  
+     
+   </package>  
+</struts>    
