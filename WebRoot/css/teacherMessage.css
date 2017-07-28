@@ -1,0 +1,85 @@
+
+.tableHead{
+	line-height:35px; 
+	background:#33c586;
+	color:#fff;
+    padding-left:5px;
+}
+.trMessage{	
+	line-height:40px; 
+}
+.pdl5{
+	  padding-left:5px;
+	  font-size:15px; 
+}
+.ft15{
+	  font-size:15px; 
+}
+
+.text2{
+	 width:250px;	
+	 border-radius:3px; 
+	 margin-left:5px;
+	 color:#2e2e2e; 
+	 font-size:14px; 
+	 padding-left:10px; 
+	 height:30px;
+	 line-height:30px\9;
+	 border:1px solid #C0C0C0;
+}
+
+.text2:hover{
+	border:1px solid #1F7CAF;
+}
+
+.text2:active{
+	border:1px solid #5bb3e1;
+}
+.text2:focus{
+	border:1px solid #5bb3e1;
+}
+
+.text3{
+	 width:684px;	
+	 border-radius:3px; 
+	 margin-left:5px;
+	 color:#2e2e2e; 
+	 font-size:14px; 
+	 padding-left:10px; 
+	 height:30px;
+	 line-height:30px\9;
+	 border:1px solid #C0C0C0;
+}
+
+.text3:hover{
+	border:1px solid #1F7CAF;
+}
+
+.tk_Mask_kboxwrap {
+	background: #000;
+	z-index: 9;
+	opacity: 0.5;
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+.text3:active{
+	border:1px solid #5bb3e1;
+}
+.text3:focus{
+	border:1px solid #5bb3e1;
+}
+
+input::-ms-input-placeholder{
+    color:#C8C8C8;
+}
+input::-webkit-input-placeholder{
+    color:#C8C8C8;
+}
+input::-moz-placeholder {
+    color:    #C8C8C8;
+}

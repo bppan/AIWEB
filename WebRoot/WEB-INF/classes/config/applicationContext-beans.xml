@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
+
+
+	<!-- Spring管理Struts2的Action -->
+	<bean name="loginAction" class="cn.edu.aicourse.action.LoginAction" scope="prototype">
+		<property name="userservice">
+			<ref bean = "usersevice"/>
+		</property>
+		<property name="usertypeservice">
+			<ref bean = "usertypeservice"/>
+		</property>
+		<property name="useraccesswebserivce">
+			<ref bean = "useraccesswebserivce"/>
+		</property>
+		
+	</bean>
+	
+	<bean name="loginValidateNameAction" class="cn.edu.aicourse.action.LoginValidateNameAction" scope="prototype">
+		<property name="userservice">
+			<ref bean = "usersevice"/>
+		</property>
+		<property name="usertypeservice">
+			<ref bean = "usertypeservice"/>
+		</property>
+		<property name="useraccesswebserivce">
+			<ref bean = "useraccesswebserivce"/>
+		</property>
+	</bean>
+	<bean name="registerAction" class="cn.edu.aicourse.action.RegisterLoginNameAction" scope="prototype">
+		<property name="userservice">
+			<ref bean = "usersevice"/>
+		</property>
+	</bean>
+	
+	<bean name="registUserAction" class="cn.edu.aicourse.action.RegistUserAction" scope="prototype">
+		<property name="userservice">
+			<ref bean = "usersevice"/>
+		</property>
+	</bean>
+	
+	<bean name="validateUserNameAction" class="cn.edu.aicourse.action.ValidateUserName" scope="prototype">
+		<property name="userservice">
+			<ref bean = "usersevice"/>
+		</property>		
+	</bean>
+	
+	<bean name="validateAlterLoginNameAction" class="cn.edu.aicourse.action.ValidateAlterLoginNameAction" scope="prototype">
+		<property name="userservice">
+			<ref bean = "usersevice"/>
+		</property>		
+	</bean>
+	
+	<bean name="alterUserAction" class="cn.edu.aicourse.action.AlterUserAction" scope="prototype">
+		<property name="userservice">
+			<ref bean = "usersevice"/>
+		</property>
+	</bean>
+	<bean name="alterTeacherAction" class="cn.edu.aicourse.action.AlterTeacherAction" scope="prototype">
+		<property name="userservice">
+			<ref bean = "usersevice"/>
+		</property>
+	</bean>
+	
+	
+	<bean name="addTeacherAction" class="cn.edu.aicourse.action.AddTeacherAction" scope="prototype">
+		<property name="userservice">
+			<ref bean = "usersevice"/>
+		</property>
+	</bean>
+	
+
+		
+	<bean name="LoginImageCode" class="cn.edu.aicourse.action.LoginImageCode" scope="prototype"></bean>
+	<bean name="loginStateAction" class="cn.edu.aicourse.action.LoginStateAction" scope="prototype"></bean>
+	<bean name="getLoginFailTimeAction" class="cn.edu.aicourse.action.LoginFailTimeAction" scope="prototype"></bean>
+	
+	<bean name="uploadfileAction" class="cn.edu.aicourse.action.UpLoadFileAction" scope="prototype">
+		<property name="fileservice">
+			<ref bean = "fileservice"/>
+		</property>
+	</bean>
+
+	<bean name="getKlgModuleAction" class="cn.edu.aicourse.action.MenuNavKlgModuleAction" scope="prototype">
+		<property name="moduleservice">
+			<ref bean = "modulesevice"/>
+		</property>
+		<property name="pointservice">
+			<ref bean = "pointservice"/>
+		</property>
+		<property name="unitservice">
+			<ref bean = "unitservice"/>
+		</property>
+	</bean>
+
+	<bean name="getWebContentAction" class="cn.edu.aicourse.action.GetWebContentAction" scope="prototype">
+		<property name="pointcontentservice">
+			<ref bean ="pointcontentservice"/>
+		</property>
+		<property name="algorithmservice">
+			<ref bean ="algorithmservice"/>
+		</property>
+	</bean>
+	
+	<bean name = "deleteTeacherAction" class = "cn.edu.aicourse.action.DeleteTeacherAction" scope="prototype">
+		<property name="userservice">
+			<ref bean = "usersevice" />
+		</property>
+	</bean>
+	<bean name = "getStudentMessageListAction" class = "cn.edu.aicourse.action.ViewStudentMessageAction" scope="prototype">
+		<property name="studentservice">
+			<ref bean = "viewstudentservice" />
+		</property>
+	</bean>
+	
+    <bean name = "getTeaMessageListAction" class = "cn.edu.aicourse.action.GetTeaMessageListAction" scope="prototype">
+		<property name="teacherservice">
+			<ref bean = "viewteacherservice" />
+		</property>
+	</bean>
+	
+    <bean name = "getTeacherMessageAction" class = "cn.edu.aicourse.action.GetTeacherMessageAction" scope="prototype">
+		<property name="userMessageService">
+			<ref bean = "userMessageservice" />
+		</property>
+	</bean>
+	
+	<bean name = "alterTeacherMessageAction" class = "cn.edu.aicourse.action.AlterTeacherMessageAction" scope="prototype">
+		<property name="userMessageService">
+			<ref bean = "userMessageservice" />
+		</property>
+		<property name="userservice">
+			<ref bean = "usersevice" />
+		</property>
+	</bean>
+	
+	
+	<bean name="getModuleUnitPointListAction" class="cn.edu.aicourse.action.GetModuleUnitPointListAction" scope="prototype">
+		<property name="moduleservice">
+			<ref bean = "modulesevice"/>
+		</property>
+		<property name="pointservice">
+			<ref bean = "pointservice"/>
+		</property>
+		<property name="unitservice">
+			<ref bean = "unitservice"/>
+		</property>
+	</bean>
+	
+	<bean name="alterWebContentAction" class="cn.edu.aicourse.action.AlterWebContentAction" scope="prototype">
+		<property name="pointcontentservice">
+			<ref bean ="pointcontentservice"/>
+		</property>
+		<property name="pointservice">
+			<ref bean = "pointservice"/>
+		</property>
+	</bean>
+	
+	<bean name="addPMUAAction" class="cn.edu.aicourse.action.AddPMUAAction" scope="prototype">
+		<property name="moduleservice">
+			<ref bean = "modulesevice"/>
+		</property>
+		<property name="unitservice">
+			<ref bean ="unitservice"/>
+		</property>
+		<property name="pointservice">
+			<ref bean = "pointservice"/>
+		</property>
+		<property name="algorithmservice">
+			<ref bean ="algorithmservice"/>
+		</property>
+	</bean>
+	<bean name="Id3LoadExcelServletAction" class="cn.edu.aicourse.action.Id3LoadExcelServletAction" scope="prototype">
+	</bean>
+	
+	
+	<!-- Service -->
+	<bean name = "getfileListAction" class = "cn.edu.aicourse.action.GetfileListAction">
+		<property name="fileservice">
+			<ref bean = "fileservice" />
+		</property>
+		<property name="userservice">
+			<ref bean = "usersevice"/>
+		</property>
+	</bean>
+	<bean name = "downFileAction" class = "cn.edu.aicourse.action.DownFileAction">
+		<property name="fileservice">
+		<ref bean = "fileservice" />
+		</property>
+	</bean>
+	
+	<bean name = "deleteFileAction" class = "cn.edu.aicourse.action.DeleteFileAction">
+		<property name="fileservice">
+		<ref bean = "fileservice" />
+		</property>
+	</bean>
+	
+	<bean name = "usersevice" class = "cn.edu.aicourse.service.impl.UserServiceImpl">
+		<property name="userdao">
+		<ref bean = "UserDAO" />
+		</property>
+	</bean>
+	
+	<bean name = "fileservice" class = "cn.edu.aicourse.service.impl.TeacherFileServiceImpl">
+		<property name="teacherfiledao">
+		<ref bean = "TeacherfileDAO" />
+		</property>
+	</bean>
+	
+	<bean name = "modulesevice" class = "cn.edu.aicourse.service.impl.KlgModuleServiceImpl">
+		<property name="klgmoduledao">
+		<ref bean = "KlgModuleDAO" />
+		</property>
+	</bean>
+	
+	<bean name = "pointservice" class = "cn.edu.aicourse.service.impl.KlgPointServiceImpl">
+		<property name="klgpointdao">
+		<ref bean = "KlgPointDAO" />
+		</property>
+	</bean>
+	
+	<bean name = "unitservice" class = "cn.edu.aicourse.service.impl.KlgUnitServiceImpl">
+		<property name="klgunitdao">
+		<ref bean = "KlgUnitDAO" />
+		</property>
+	</bean>
+	<bean name = "pointcontentservice" class = "cn.edu.aicourse.service.impl.KlgPointContentServiceImpl">
+		<property name="klgpointcontentdao">
+		<ref bean = "KlgPointContainDAO" />
+		</property>
+	</bean>
+	
+	<bean name = "algorithmservice" class = "cn.edu.aicourse.service.impl.AlgorithmServiceImpl">
+		<property name="algorithmdao">
+		<ref bean = "AlgorithmDAO" />
+		</property>
+	</bean>
+	
+	
+	
+	<bean name = "usertypeservice" class = "cn.edu.aicourse.service.impl.UserAllTypesServiceImpl">
+		<property name="userAllTypesdao">
+		<ref bean = "UserAllTypesDAO" />
+		</property>
+	</bean>
+	
+	<bean name = "getteaListAction" class = "cn.edu.aicourse.action.GetTeacherList">
+		<property name="userservice">
+		<ref bean = "usersevice" />
+		</property>
+		<property name="userwebservice">
+		<ref bean = "useraccesswebserivce" />
+		</property>
+	</bean>
+	
+	<bean name = "useraccesswebserivce" class = "cn.edu.aicourse.service.impl.UserAccessWebService">
+		<property name="useraccesswebserivce">
+		<ref bean = "UserAccessWebDAO" />
+		</property>
+	</bean>
+	
+	<bean name = "viewstudentservice" class = "cn.edu.aicourse.service.impl.ViewStudentServiceImpl">
+		<property name="viewStudentdao">
+			<ref bean = "ViewStudentDAO" />
+		</property>
+	</bean>
+	
+	
+	<bean name = "viewteacherservice" class = "cn.edu.aicourse.service.impl.ViewTeacherServiceImpl">
+		<property name="teacherdao">
+			<ref bean = "ViewTeacherDAO" />
+		</property>
+	</bean>
+
+	<bean name = "userMessageservice" class = "cn.edu.aicourse.service.impl.UserMessageServiceImpl">
+		<property name="usermessagedao">
+			<ref bean = "UserMessageDAO" />
+		</property>
+	</bean>
+	
+
+
+
+
+	<!-- Spring管理Struts2的Interceptor -->
+	<bean name="checkLoginInterceptor" class="cn.edu.aicourse.interceptor.CheckLogin" scope="prototype"></bean>
+	
+	<bean id="KlgUnitDAO" class="cn.edu.aicourse.dao.impl.KlgUnitDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="AlgorithmDAO"
+		class="cn.edu.aicourse.dao.impl.AlgorithmDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="KlgPointContainDAO"
+		class="cn.edu.aicourse.dao.impl.KlgPointContentDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="KlgModuleDAO"
+		class="cn.edu.aicourse.dao.impl.KlgModuleDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="UserTeachCourseDAO"
+		class="cn.edu.aicourse.dao.impl.UserTeachCourseDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="UserDAO" class="cn.edu.aicourse.dao.impl.UserDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="KlgPointDAO" class="cn.edu.aicourse.dao.impl.KlgPointDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="CourseDAO" class="cn.edu.aicourse.entity.CourseDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="TeacherfileDAO"
+		class="cn.edu.aicourse.dao.impl.TeacherfileDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="UserAllTypesDAO"
+		class="cn.edu.aicourse.dao.impl.UserAllTypesDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="UserAccessWebDAO"
+		class="cn.edu.aicourse.dao.impl.UserAccessWebDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="ViewStudentDAO"
+		class="cn.edu.aicourse.dao.impl.ViewStudentDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="ViewTeacherDAO"
+		class="cn.edu.aicourse.dao.impl.ViewTeacherDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="UserMessageDAO"
+		class="cn.edu.aicourse.dao.impl.UserMessageDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	</beans>
